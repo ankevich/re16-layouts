@@ -4,6 +4,7 @@ import ListView from "./components/ListView";
 import IconSwitch from "./components/IconSwitch";
 import "./App.css";
 import { useState } from "react";
+import styled from "styled-components";
 
 function App() {
   return <Store />;
@@ -25,5 +26,6 @@ const Store = () => {
     </>
   );
 };
+
 
 export default App;
