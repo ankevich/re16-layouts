@@ -1,5 +1,5 @@
-const IconSwitch = () => {
-    return <span className="material-icons">list</span>;
+const IconSwitch = ({switcher}) => {
+    return <span onClick = {()=>switcher()} className="material-icons">list</span>;
   };
 
   export default IconSwitch;

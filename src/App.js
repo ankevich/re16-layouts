@@ -11,9 +11,14 @@ function App() {
 
 const Store = () => {
   const [state, setState] = useState("list");
+  const toggleState = () => {
+    if (state === "cards") {
+      setState("list");
+    } else setState("cards");
+  };
   return (
     <>
-      <IconSwitch />
+      <IconSwitch switcher={toggleState} />
       {state === "cards" ? (
         <CardsView products={products} />
       ) : (
