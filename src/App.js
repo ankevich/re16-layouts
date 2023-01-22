@@ -10,7 +10,7 @@ function App() {
 }
 
 const Store = () => {
-  const [state, setState] = useState("cards");
+  const [state, setState] = useState("list");
   const toggleState = () => {
     state === "cards" ? setState("list") : setState("cards");
   };
