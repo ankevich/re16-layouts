@@ -10,11 +10,9 @@ function App() {
 }
 
 const Store = () => {
-  const [state, setState] = useState("list");
+  const [state, setState] = useState("cards");
   const toggleState = () => {
-    if (state === "cards") {
-      setState("list");
-    } else setState("cards");
+    state === "cards" ? setState("list") : setState("cards");
   };
   return (
     <>
