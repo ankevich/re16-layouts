@@ -1,17 +1,17 @@
-import products from './products';
-import './App.css';
+import products from "./products";
+import CardsView from "./CardsView";
+import ListView from "./ListView";
+import "./App.css";
+
 
 const IconSwitch = () => {
-  return (
-<span class="material-icons">
-list
-</span>);
-}
+  return <span className="material-icons">list</span>;
+};
 
 function App() {
-  return (
-<IconSwitch/>
-  );
+  return <>
+  <IconSwitch/>
+  <ListView products={products}/></>
 }
 
 export default App;
